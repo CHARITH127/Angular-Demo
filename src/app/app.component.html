@@ -12,11 +12,11 @@
 <div class="control-panel">
   <div class="form-group">
     <label>Price:</label>
-    <input type="number" id="text-price" placeholder="price" min="0" [value]="price">
+    <input #txtPrice type="number" id="text-price" placeholder="price" min="0" [value]="price" (input)="updatePrice(txtPrice.value)">
   </div>
   <div class="form-group">
     <label>Discount</label>
-    <input type="number" id="txt-discount" min="0" placeholder="Discount" [value]="discount">
+    <input #txtDiscount type="number" id="txt-discount" min="0" placeholder="Discount" [value]="discount" (input)="updateDiscount(txtDiscount.value)">
   </div>
 
 </div>
