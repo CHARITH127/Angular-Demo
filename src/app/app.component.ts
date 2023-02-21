@@ -15,4 +15,9 @@ export class AppComponent {
   checkDiscount() : boolean {
     return (this.discount>20)
   }
+
+  colorChanging(): String{
+    const finalPrice = this.price - (this.price * this.discount/100);
+    return finalPrice > 200 ? 'red' : 'blue'
+  }
 }
