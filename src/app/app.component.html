@@ -1,0 +1,22 @@
+<h1>HEllo js</h1>
+<div class="cart-item">
+  <img src="assets/images/71mAqerZwmL._AC_SX466_.jpg" alt="">
+  <div class="cart-item_title">Quick Charge 3.0 USB Car Charger Socket 12V/24V 36W Dual QC3.0 USB Fast Charger
+    Socket Power Outlet with Touch Switch for Marine, Boat, Motorcycle, Truck, Golf Cart (White)
+  </div>
+  <div class="cart-item_price">${{price}}</div>
+  <div class="cart-item_discount">Discount <span>{{discount}}%</span></div>
+  <div class="cart-item_finalPrice">${{price - (price * discount / 100)}}</div>
+</div>
+
+<div class="control-panel">
+  <div class="form-group">
+    <label>Price:</label>
+    <input type="number" id="text-price" placeholder="price">
+  </div>
+  <div class="form-group">
+    <label>Discount</label>
+    <input type="number" id="txt-discount" placeholder="Discount">
+  </div>
+
+</div>
