@@ -9,4 +9,10 @@ export class AppComponent {
   price = 100;
   discount = 30;
 
+  highlight =false;
+
+
+  checkDiscount() : boolean {
+    return (this.discount>20)
+  }
 }
