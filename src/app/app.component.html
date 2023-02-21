@@ -12,11 +12,12 @@
 <div class="control-panel">
   <div class="form-group">
     <label>Price:</label>
-    <input #txtPrice type="number" id="text-price" placeholder="price" min="0" [value]="price" (input)="updatePrice(txtPrice.value)">
+    <!--<input #txtPrice type="number" id="text-price" placeholder="price" min="0" [value]="price" (input)="updatePrice(txtPrice.value)">-->
+    <input #txtPrice type="number" id="text-price" placeholder="price" min="0" [(ngModel)]="price" >
   </div>
   <div class="form-group">
     <label>Discount</label>
-    <input #txtDiscount type="number" id="txt-discount" min="0" placeholder="Discount" [value]="discount" (input)="updateDiscount(txtDiscount.value)">
+    <input #txtDiscount type="number" id="txt-discount" min="0" placeholder="Discount" [(ngModel)]="discount" >
   </div>
 
 </div>
