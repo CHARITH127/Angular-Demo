@@ -5,7 +5,7 @@
     Socket Power Outlet with Touch Switch for Marine, Boat, Motorcycle, Truck, Golf Cart (White)
   </div>
   <div class="cart-item_price">{{price | currency : 'USD' }}</div>
-  <div class="cart-item_discount">{{'discount' | uppercase }} <span>{{discount | percentage}}</span></div>
+  <div class="cart-item_discount">{{'discount' | uppercase }} <span>{{discount | number:'2.2-2' | percentage}}</span></div>
   <div class="cart-item_finalPrice">{{price - (price * discount / 100) | currency : 'USD'}}</div>
 </div>
 

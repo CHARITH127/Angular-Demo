@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PercentagePipe implements PipeTransform {
 
-  transform(value: number, ...args: unknown[]): String {
+  transform(value: String | null, ...args: unknown[]): String {
     return `${value}%`;
   }
 
