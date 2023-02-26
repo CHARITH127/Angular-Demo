@@ -1,4 +1,4 @@
-<h1>HEllo js</h1>
+<h1 [title]="title">HEllo js</h1>
 <div class="cart-item">
   <img src="assets/images/71mAqerZwmL._AC_SX466_.jpg" alt="">
   <div class="cart-item_title">Quick Charge 3.0 USB Car Charger Socket 12V/24V 36W Dual QC3.0 USB Fast Charger
@@ -20,5 +20,5 @@
     <label>Discount</label>
     <input type="number" id="txt-discount" min="0" placeholder="Discount" [(ngModel)]="discount">
   </div>
-
 </div>
+<button (click)="chageToolTip()" >Lets change with tooltip! </button>
