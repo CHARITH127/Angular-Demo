@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   price = 100;
   discount = 30;
+  title = "hello angular i'm a property"
 
   highlight =false;
 
@@ -19,5 +20,9 @@ export class AppComponent {
   colorChanging(): String{
     const finalPrice = this.price - (this.price * this.discount/100);
     return finalPrice > 200 ? 'red' : 'blue'
+  }
+
+  chageToolTip() {
+    this.title = "Title changed"
   }
 }
