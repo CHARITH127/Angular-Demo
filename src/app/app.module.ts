@@ -20,7 +20,7 @@ import { StructuralComponent } from './structural/structural.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [StylingComponent]
+  bootstrap: [StructuralComponent]
 })
 export class AppModule {
 }
