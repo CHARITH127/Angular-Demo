@@ -12,7 +12,7 @@
     </tr>
    </thead>
    <tbody>
-     <tr *ngFor ="let s of students; let pos = index" [class.row]="pos % 2 ==1">
+     <tr *ngFor ="let s of students; let pos = index; trackBy: byId" >
        <td>{{pos}}</td>
        <td>{{s.id}}</td>
        <td>{{s.name}}</td>
@@ -20,4 +20,13 @@
    </tbody>
  </table>
 
-<button id = 'reloadbtn'> reload students</button>
+<button id = 'reloadbtn' (click)="reloadStudents()" > reload students</button>
+
+<hr>
+<ul>
+  <li *ngFor = "let s of students" [ngSwitch] = "s.rating">
+    {{s.name}} - <span *ngSwitchCase = "5">*****</span>
+    <span *ngSwitchCase = "4">****</span>
+    <span *ngSwitchCase = "3">***</span>
+  </li>
+</ul>
