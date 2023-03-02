@@ -1,1 +1,30 @@
-<h1 class="primary underline hightlight">Let's style with classes </h1>
+<!--<h1 class="primary underline hightlight">Let's style with classes </h1>-->
+<h1 [ngClass]="styleClass">Let's style with classes </h1>
+<div>
+  <label>
+    <input type="checkbox" [(ngModel)]="highlight" (ngModelChange)="setStyls()"> Highlight
+  </label>
+  <label>
+    <input type="checkbox" [(ngModel)]="primary" (ngModelChange)="setStyls()"> Primary Color
+  </label>
+  <label>
+    <input type="checkbox" [(ngModel)]="underline" (ngModelChange)="setStyls()"> Underline
+  </label>
+</div>
+<!--<h1 [style.backgroundColor]="highlight_?'yellow':'white'"
+    [style.color]="primary_?'blue':'black'"
+    [style.textDecoration]="underline_?'underline':'none'"
+>Lets style with some style properties</h1><div>-->
+<h1 [ngStyle]="ngstyles">Lets style with some style properties</h1>
+<div>
+  <label>
+    <input type="checkbox" [(ngModel)]="highlight_" (ngModelChange)="setStyleClasses()"> Highlight
+  </label>
+  <label>
+    <input type="checkbox" [(ngModel)]="primary_" (ngModelChange)="setStyleClasses()"> Primary Color
+  </label>
+  <label>
+    <input type="checkbox" [(ngModel)]="underline_" (ngModelChange)="setStyleClasses()"> Underline
+  </label>
+</div>
+
