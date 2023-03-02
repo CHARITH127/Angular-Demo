@@ -2,3 +2,22 @@
 <p *ngIf= 'showPara'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at, atque consectetur dolorum ea, esse eum
   exercitationem molestias, nemo odit optio qui quisquam reprehenderit sint ullam? Dolorum fugit nam perspiciatis!</p>
 <button (click)="enablePara()">Show /Hide para</button>
+<h1>ngFor Directive</h1>
+ <table>
+   <thead>
+    <tr>
+      <th>Array Index</th>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor ="let s of students; let pos = index" [class.row]="pos % 2 ==1">
+       <td>{{pos}}</td>
+       <td>{{s.id}}</td>
+       <td>{{s.name}}</td>
+     </tr>
+   </tbody>
+ </table>
+
+<button id = 'reloadbtn'> reload students</button>
