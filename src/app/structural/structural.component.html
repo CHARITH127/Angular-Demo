@@ -24,9 +24,17 @@
 
 <hr>
 <ul>
-  <li *ngFor = "let s of students" [ngSwitch] = "s.rating">
-    {{s.name}} - <span *ngSwitchCase = "5">*****</span>
-    <span *ngSwitchCase = "4">****</span>
-    <span *ngSwitchCase = "3">***</span>
+<!--  <li *ngFor = "let s of students" [ngSwitch] = "s.rating">-->
+<!--    {{s.name}} - <span *ngSwitchCase = "5">*****</span>-->
+<!--    <span *ngSwitchCase = "4">****</span>-->
+<!--    <span *ngSwitchCase = "3">***</span>-->
+<!--  </li>-->
+  <li *ngFor = "let s of students" >
+    <ng-container [ngSwitch] = "s.rating">
+      {{s.name}} - <span *ngSwitchCase = "5">*****</span>
+      <span *ngSwitchCase = "4">****</span>
+      <span *ngSwitchCase = "3">***</span>
+    </ng-container>
+
   </li>
 </ul>

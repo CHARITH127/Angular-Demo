@@ -1,0 +1,5 @@
+<img src="assets/images/71mAqerZwmL._AC_SX466_.jpg" alt="">
+<p>portable charging drive</p>
+<p *ngIf = "(stock-incart)!==0"> In stock : {{stock-incart}}</p>
+<p class ="error" *ngIf = "(stock-incart)===0">Out of stock</p>
+<button (click)="AddToCart()">Add to cart</button>

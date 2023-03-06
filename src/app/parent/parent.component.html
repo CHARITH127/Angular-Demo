@@ -1,0 +1,7 @@
+<header>
+  Cart  : {{cartValue}}
+  <button (click)="removeFromCart()">Remove</button>
+</header>
+<main>
+  <app-child (updateCart)="changeCart($event)" [incart]="cartValue"></app-child>
+</main>
